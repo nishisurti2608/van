@@ -7,9 +7,11 @@ import Vans from './pages/Van/Vans';
 import "./server"
 import VanDetails from './pages/Van/VanDetails';
 import Layout from './pages/Layout';
-import Host from './pages/Host/Host';
+import Host from './pages/Host/Dashboard';
 import Income from './pages/Host/Income';
 import Reviews from './pages/Host/Reviews';
+import HostLayout from './pages/HostLayout';
+import Dashboard from './pages/Host/Dashboard';
 
 function App() {
   return (
@@ -18,12 +20,15 @@ function App() {
       <Routes >
         <Route element={<Layout/>}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/vans" element={<Vans />} />
-        <Route path="/vans/:id" element={<VanDetails />} />
-        <Route path="/host" element={<Host/>}/>
-        <Route path="/income" element={<Income/>}/>
-        <Route path="/reviews" element={<Reviews/>}/>
+        <Route path="about" element={<About />} />
+        <Route path="vans" element={<Vans />} />
+        <Route path="vans/:id" element={<VanDetails />} />
+      
+         <Route path="host" element={<HostLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="income" element={<Income />} />
+            <Route path="reviews" element={<Reviews />} />
+          </Route>
         </Route>
       </Routes>
 
