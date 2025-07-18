@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Vans from './pages/Vans';
+import Vans from './pages/Van/Vans';
 import "./server"
-import VanDetails from './pages/VanDetails';
+import VanDetails from './pages/Van/VanDetails';
 import Layout from './pages/Layout';
+import Host from './pages/Host/Host';
+import Income from './pages/Host/Income';
+import Reviews from './pages/Host/Reviews';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
         <Route path="/vans/:id" element={<VanDetails />} />
+        <Route path="/host" element={<Host/>}/>
+        <Route path="/income" element={<Income/>}/>
+        <Route path="/reviews" element={<Reviews/>}/>
         </Route>
       </Routes>
 

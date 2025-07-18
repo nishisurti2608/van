@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react"
 import {Link} from "react-router-dom"
-import VanDetails from "./VanDetails"
+
 
 export default function Vans() {
 
