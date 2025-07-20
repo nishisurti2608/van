@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s04sl39",
-  "description": "https://scrimba.com/frontend-path-c0j/~011r",
+  "name": "Scrim-s04rele",
+  "description": "https://scrimba.com/frontend-path-c0j/~0148",
   "scripts": {
     "start": "vite",
     "dev": "vite",
@@ -8,10 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "miragejs": "^0.1.48",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "^7.7.0",
+    "react-router-dom": "6.4.3",
+    "miragejs": "0.1.46",
+    "react-icons": "4.7.1",
     "vite": "latest"
   },
   "devDependencies": {
